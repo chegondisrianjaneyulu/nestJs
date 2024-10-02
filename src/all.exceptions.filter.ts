@@ -3,7 +3,6 @@ import { BaseExceptionFilter } from "@nestjs/core";
 import { PrismaClientValidationError } from "@prisma/client/runtime/library";
 import  { Request, Response } from "express";
 
-
 type MyResponseObj = {
    statusCode : number,
    timestamp :string,

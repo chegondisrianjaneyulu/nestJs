@@ -8,6 +8,7 @@ import { ThrottlerModule, ThrottlerGuard } from '@nestjs/throttler';
 import { APP_GUARD } from '@nestjs/core';
 import { MyLoggerModule } from './my-logger/my-logger.module';
 import { PostsModule } from './posts/posts.module';
+import { ProfilesModule } from './profiles/profiles.module';
 
 
 @Module({
@@ -24,7 +25,8 @@ import { PostsModule } from './posts/posts.module';
     }
   ]),
     MyLoggerModule,
-    PostsModule
+    PostsModule,
+    ProfilesModule
   ]
   ,
   controllers: [AppController],

@@ -9,6 +9,7 @@ import { APP_GUARD } from '@nestjs/core';
 import { MyLoggerModule } from './my-logger/my-logger.module';
 import { PostsModule } from './posts/posts.module';
 import { ProfilesModule } from './profiles/profiles.module';
+import { CustomersModule } from './customers/customers.module';
 
 
 @Module({
@@ -26,7 +27,8 @@ import { ProfilesModule } from './profiles/profiles.module';
   ]),
     MyLoggerModule,
     PostsModule,
-    ProfilesModule
+    ProfilesModule,
+    CustomersModule
   ]
   ,
   controllers: [AppController],

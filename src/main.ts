@@ -8,7 +8,7 @@ async function bootstrap() {
   const {httpAdapter} = app.get(HttpAdapterHost)
   app.useGlobalFilters(new AllExceptionsFilter(httpAdapter))
   app.enableCors()
-  app.setGlobalPrefix('api')
+  app.setGlobalPrefix('api/v1')
   await app.listen(3000);
   console.log('Server started listening port 3000')
 }
